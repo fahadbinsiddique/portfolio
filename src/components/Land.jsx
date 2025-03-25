@@ -15,7 +15,7 @@ const LazyProjects = lazy(() => import("./Projects"));
 
 export default function Land() {
   return (
-    <div className="relative  text-white min-h-screen overflow-hidden">
+    <div className="relative bg-gray-900 text-white min-h-screen overflow-hidden">
       {/* Background elements that don't need suspense */}
       <div className="fixed inset-0 -z-10 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-900 rounded-full filter blur-3xl"></div>
@@ -23,11 +23,11 @@ export default function Land() {
       </div>
 
       <Navbar />
-      
+
       <main className="relative z-10">
         <Hero />
         <BentoGrid />
-        
+
         <Suspense fallback={<LoadingSpinner text="Loading Projects..." />}>
           <LazyProjects />
         </Suspense>

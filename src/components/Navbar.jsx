@@ -24,6 +24,7 @@ const Navbar = () => {
     { id: "testimonials", label: "Testimonials" },
     { id: "experience", label: "Experience" },
     { id: "contact", label: "Contact" },
+    { id: "resume", label: "Resume" },
   ];
 
   if (!mounted) return null;

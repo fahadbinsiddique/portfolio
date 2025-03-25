@@ -9,3 +9,9 @@ html {
   body {
     @apply text-base md:text-lg lg:text-xl;
   }
+
+  @font-face {
+    font-family: 'Helvetiker';
+    src: url('/fonts/helvetiker_regular.typeface.json') format('woff2');
+    font-display: swap;
+  }
