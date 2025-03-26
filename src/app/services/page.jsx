@@ -1,10 +1,10 @@
-import Shop from '@/components/shop/Shop'
 import React from 'react'
+import Service from '@/components/Service'
 
 const page = () => {
   return (
-    <div>
-      <Shop/>
+    <div className="py-12">
+      <Service />
     </div>
   )
 }

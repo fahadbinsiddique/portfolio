@@ -4,9 +4,10 @@ import BentoGrid from "@/components/BentoGrid";
 import Testimonials from "@/components/Testimonials";
 import WorkExperience from "@/components/WorkExperience";
 import Approach from "./Approach";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+// import Footer from "./Layout/Footer";
+// import Navbar from "./Layout/Navbar";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import Resume from "./Resume";
 
 // Lazy load heavy components
 // const LazyGlobe = lazy(() => import("./Globe"));
@@ -22,10 +23,12 @@ export default function Land() {
         <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-amber-900 rounded-full filter blur-3xl"></div>
       </div>
 
-      <Navbar />
+      {/* <Navbar /> */}
 
       <main className="relative z-10">
+        
         <Hero />
+        <Resume/>
         <BentoGrid />
 
         <Suspense fallback={<LoadingSpinner text="Loading Projects..." />}>
@@ -45,7 +48,7 @@ export default function Land() {
         <LazyCanvasEffect />
       </Suspense>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

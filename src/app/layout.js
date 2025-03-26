@@ -1,6 +1,9 @@
+`"use client"`;
 import { Geist, Geist_Mono } from "next/font/google";
 import { Viewport } from "next";
 import "./globals.css";
+import Navbar from "@/components/Layout/Navbar";
+import Footer from "@/components/Layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +47,7 @@ export const metadata = {
     siteName: "Fahad's Portfolio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/fahad-photo.jpg",
         width: 1200,
         height: 630,
         alt: "Portfolio Preview",
@@ -103,7 +106,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-black text-white selection:bg-purple-500 selection:text-white`}
       >
+        <Navbar/>
         {children}
+        <Footer />
       </body>
     </html>
   );

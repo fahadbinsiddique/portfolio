@@ -47,7 +47,7 @@ const StarRating = ({ rating }) => {
 
 const Testimonials = () => {
   return (
-    <section className="relative max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="testimonials" className="relative max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background elements */}
       <div className="absolute -top-20 -left-20 w-64 h-64 bg-purple-900 rounded-full filter blur-3xl opacity-20"></div>
       <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-purple-900 rounded-full filter blur-3xl opacity-20"></div>
