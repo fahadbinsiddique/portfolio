@@ -1,54 +1,76 @@
+"use client";
 import { Suspense, lazy } from "react";
-import Hero from "@/components/Hero";
-import BentoGrid from "@/components/BentoGrid";
-import Testimonials from "@/components/Testimonials";
-import WorkExperience from "@/components/WorkExperience";
-import Approach from "./Approach";
-// import Footer from "./Layout/Footer";
-// import Navbar from "./Layout/Navbar";
 import LoadingSpinner from "@/components/LoadingSpinner";
-import Resume from "./Resume";
 
 // Lazy load heavy components
-// const LazyGlobe = lazy(() => import("./Globe"));
-const LazyCanvasEffect = lazy(() => import("./CanvasEffect"));
-const LazyProjects = lazy(() => import("./Projects"));
+const Hero = lazy(() => import("./Hero"));
+const About = lazy(() => import("./About"));
+const Approach = lazy(() => import("./Approach"));
+const Services = lazy(() => import("./Service"));
+const WorkExperience = lazy(() => import("./WorkExperience"));
+const Projects = lazy(() => import("./Projects"));
+const BentoGrid = lazy(() => import("./BentoGrid"));
+const Testimonials = lazy(() => import("./Testimonials"));
+const Resume = lazy(() => import("./Resume"));
+const Contact = lazy(() => import("./Contact"));
+const CanvasEffect = lazy(() => import("./CanvasEffect"));
 
 export default function Land() {
   return (
     <div className="relative bg-gray-900 text-white min-h-screen overflow-hidden">
-      {/* Background elements that don't need suspense */}
-      <div className="fixed inset-0 -z-10 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-900 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-amber-900 rounded-full filter blur-3xl"></div>
+      {/* Background elements */}
+      <div className="fixed inset-0 -z-10 opacity-20 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-900 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-amber-900 rounded-full filter blur-3xl animate-pulse"></div>
       </div>
 
-      {/* <Navbar /> */}
-
+      {/* Main content with suspense fallbacks */}
       <main className="relative z-10">
-        
-        <Hero />
-        <Resume/>
-        <BentoGrid />
-
-        <Suspense fallback={<LoadingSpinner text="Loading Projects..." />}>
-          <LazyProjects />
+        <Suspense fallback={<LoadingSpinner text="Loading Hero Section..." />}>
+          <Hero />
         </Suspense>
 
-        {/* <Suspense fallback={<LoadingSpinner text="Loading 3D Globe..." />}>
-          <LazyGlobe />
-        </Suspense> */}
+        <Suspense fallback={<LoadingSpinner text="Loading About Section..." />}>
+          <About />
+        </Suspense>
 
-        <Testimonials />
-        <WorkExperience />
-        <Approach />
+        <Suspense fallback={<LoadingSpinner text="Loading Approach..." />}>
+          <Approach />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner text="Loading Services..." />}>
+          <Services />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner text="Loading Experience..." />}>
+          <WorkExperience />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner text="Loading Projects..." />}>
+          <Projects />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner text="Loading Bento Grid..." />}>
+          <BentoGrid />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner text="Loading Testimonials..." />}>
+          <Testimonials />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner text="Loading Resume..." />}>
+          <Resume />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner text="Loading Contact..." />}>
+          <Contact />
+        </Suspense>
       </main>
 
+      {/* Canvas background effect */}
       <Suspense fallback={null}>
-        <LazyCanvasEffect />
+        <CanvasEffect />
       </Suspense>
-
-      {/* <Footer /> */}
     </div>
   );
 }

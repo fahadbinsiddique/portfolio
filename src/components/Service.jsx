@@ -125,7 +125,7 @@ const ServiceCard = ({ service, index }) => {
 
 const Services = () => {
   return (
-    <section id="services" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="Services" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5">
         <div className="absolute top-20 left-20 w-64 h-64 bg-purple-500 rounded-full filter blur-3xl"></div>

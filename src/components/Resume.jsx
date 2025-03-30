@@ -33,6 +33,7 @@ const Resume = () => {
   return (
     <motion.section 
       className="max-w-5xl mx-auto p-6   md:p-8 bg-gray-900 text-white rounded-xl shadow-2xl mt-10 border border-gray-800"
+      // id="resume"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

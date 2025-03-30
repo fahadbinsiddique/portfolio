@@ -5,8 +5,10 @@ const Page = () => {
   return (
     <>
       
-      <div className="py-12 ">
+      <div className="relative py-12 bg-gray-900 text-white min-h-screen overflow-hidden">
           <Resume />
+          
+          
       </div>
       
     </>
