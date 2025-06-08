@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -105,18 +106,18 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button
+          <Link href="#projects"><button
             ref={buttonRef}
-            className="relative px-8 py-4 bg-purple-600 hover:bg-purple-700 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30 group"
+            className="relative px-8 py-4 cursor-pointer bg-purple-600 hover:bg-purple-700 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30 group"
           >
             <span className="relative z-10">View My Work</span>
             <span className="absolute inset-0 rounded-full bg-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-1"></span>
             <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-white group-hover:w-4/5 group-hover:left-1/10 transition-all duration-500"></span>
-          </button>
+          </button></Link>
 
-          <button className="px-8 py-4 border-2 border-purple-500 text-purple-400 hover:bg-purple-900/30 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+          <Link href='#contact'><button className="px-8 py-4 border-2 cursor-pointer border-purple-500 text-purple-400 hover:bg-purple-900/30 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
             Contact Me
-          </button>
+          </button></Link>
         </div>
       </div>
 

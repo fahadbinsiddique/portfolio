@@ -24,7 +24,7 @@ export const metadata = {
   },
   description: "Innovative developer specializing in interactive UI/UX and modern web technologies.",
   applicationName: "Fahad's Portfolio",
-  authors: [{ name: "Fahad Bin Siddique", url: "https://yourwebsite.com" }],
+  authors: [{ name: "Fahad Bin Siddique", url: "https://fahads.vercel.app" }],
   keywords: [
     "portfolio",
     "web developer",

@@ -28,9 +28,9 @@ const Navbar = () => {
   const navItems = [
     { id: "resume", label: "Resume", icon: <Terminal size={16} /> },
     { id: "projects", label: "Projects", icon: <Code size={16} /> },
-    { id: "#Services", label: "Services", icon: <Cpu size={16} /> },
+    { id: "services", label: "Services", icon: <Cpu size={16} /> },
     // { id: "experience", label: "Experience", icon: <Server size={16} /> },
-    { id: "#contact", label: "Contact", icon: <Mail size={16} /> },
+    { id: "contact", label: "Contact", icon: <Mail size={16} /> },
   ];
 
   // Close mobile menu on route change
