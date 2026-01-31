@@ -21,7 +21,7 @@ const item = {
 
 const Resume = () => {
   const handleDownload = () => {
-    const fileUrl = '/fahad-resume-FrontendDeveloper.pdf';
+    const fileUrl = '/fahad-resume-Jan-Frontend.pdf';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'Fahad_Bin_Siddique_Frontend_Developer.pdf';
@@ -89,7 +89,7 @@ const Resume = () => {
           { icon: <FaEnvelope className="text-purple-400" />, text: "fahadbinsiddique0@gmail.com", href: "mailto:fahadbinsiddique0@gmail.com" },
           { icon: <FaGithub className="text-purple-400" />, text: "GitHub", href: "https://github.com/fahadbinsiddique" },
           { icon: <FaLinkedin className="text-purple-400" />, text: "LinkedIn", href: "https://linkedin.com/in/fahadbinsiddique" },
-          { icon: <FaGlobe className="text-purple-400" />, text: "Portfolio", href: "https://fahadx.netlify.app" },
+          { icon: <FaGlobe className="text-purple-400" />, text: "Portfolio", href: "https://fahads.vercel.app" },
           { icon: <FaPhone className="text-purple-400" />, text: "+8801794147764" }
         ].map((contact, index) => (
           <motion.a

@@ -36,14 +36,14 @@ export const metadata = {
   ],
   creator: "Fahad Bin Siddique",
   publisher: "Fahad Bin Siddique",
-  metadataBase: new URL("https://yourwebsite.com"),
+  metadataBase: new URL("https://fahads.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Fahad Bin Siddique | Portfolio",
     description: "Check out my latest projects & UI animations.",
-    url: "https://yourwebsite.com",
+    url: "https://fahads.vercel.app",
     siteName: "Fahad's Portfolio",
     images: [
       {

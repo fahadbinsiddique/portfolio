@@ -3,7 +3,7 @@ import { Briefcase, Calendar, ArrowRight } from "lucide-react";
 
 const experiences = [
   {
-    title: "Frontend Engineer Intern",
+    title: "Demo-1 Frontend Engineer Intern",
     company: "Tech Solutions",
     period: "Jun 2022 - Sep 2022",
     description: "Assisted in developing 5+ user-friendly web applications using React.js, improving client engagement by 35% through enhanced interactivity.",
@@ -11,7 +11,7 @@ const experiences = [
     link: "#"
   },
   {
-    title: "Mobile App Developer",
+    title: "Demo-2 Mobile App Developer",
     company: "JSM Tech",
     period: "Oct 2022 - Mar 2023",
     description: "Designed & developed a responsive mobile app with 10k+ downloads, achieving 4.8/5 rating on app stores using React Native.",
@@ -19,7 +19,7 @@ const experiences = [
     link: "#"
   },
   {
-    title: "Freelance Full-Stack Developer",
+    title: "Demo- 3 Freelance Full-Stack Developer",
     company: "Self Employed",
     period: "Apr 2023 - Present",
     description: "Led development of 3 SaaS platforms, implementing CI/CD pipelines and reducing deployment time by 60%.",
@@ -27,7 +27,7 @@ const experiences = [
     link: "#"
   },
   {
-    title: "Lead Frontend Developer",
+    title: "Demo-4 Lead Frontend Developer",
     company: "Titanium Corp",
     period: "Aug 2023 - Present",
     description: "Architected frontend systems serving 50k+ MAU, mentoring 3 junior developers and improving performance by 40%.",

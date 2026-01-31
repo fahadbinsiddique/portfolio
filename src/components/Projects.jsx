@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 // Register ScrollTrigger plugin
@@ -19,25 +19,27 @@ const projects = [
     tags: ["Tailwind", "React", "JavaScript", "FireBase"],
   },
   {
+    title: "Tic Tac Toe Game",
+    description:
+      "A modern and interactive Tic Tac Toe game built with React.js and Tailwind CSS, featuring move history tracking and winner/draw detection.",
+    link: "https://fahadfive.vercel.app/",
+    github: "https://github.com/fahadbinsiddique/tictac",
+    image: "/tictac.jpg",
+    tags: ["Tailwind CSS", "JabaScript", "React"],
+  },
+  {
     title: "Online Quran Learning Platform",
-    description: "One-on-one Quran classes with certified Al-Azhar scholars, deep understanding—accessible from home",
+    description:
+      "One-on-one Quran classes with certified Al-Azhar scholars, deep understanding—accessible from home",
     link: "https://al-azhar-quran-institute.vercel.app/",
     github: "https://github.com/fahadbinsiddique/al-azhar-quran-institute",
     image: "/download.png",
     tags: ["JabaScript", "Next.js", "React", "Framer-Motion"],
   },
   {
-    title: "Creative Short-Form Video Content Agency",
-    description:
-      "A video content agency offering tailored short-form videos starting at $99/week",
-    link: "https://fahad-shopifytask.vercel.app/",
-    github: "https://github.com/fahadbinsiddique/shopifytask",
-    image: "/1.jpg",
-    tags: ["HTML", "CSS", "JabaScript"],
-  },
-  {
     title: "Online Design & Development Learning Platform",
-    description: "An e-learning platform offering design and development courses ",
+    description:
+      "An e-learning platform offering design and development courses ",
     link: "https://fahadprojectone.vercel.app/",
     github: "https://github.com/fahadbinsiddique/my-project",
     image: "/1.jpg",
