@@ -26,6 +26,7 @@ const Navbar = () => {
 
   // Tech-inspired nav items with icons
   const navItems = [
+    { id: "/", label: "Home", icon: <Server size={16} /> },
     { id: "resume", label: "Resume", icon: <Terminal size={16} /> },
     { id: "projects", label: "Projects", icon: <Code size={16} /> },
     { id: "services", label: "Services", icon: <Cpu size={16} /> },
@@ -41,18 +42,19 @@ const Navbar = () => {
   // Animation variants
   const containerVariants = {
     hidden: { y: -100, opacity: 0 },
-    visible: { 
-      y: 0, 
+    visible: {
+      y: 0,
       opacity: 1,
       transition: {
         type: "spring",
         stiffness: 400,
-        damping: 25
-      }
-    }
+        damping: 25,
+      },
+    },
   };
 
-  const hexagonPath = "M25 0L75 0L100 43.3013L75 86.6025L25 86.6025L0 43.3013L25 0Z";
+  const hexagonPath =
+    "M25 0L75 0L100 43.3013L75 86.6025L25 86.6025L0 43.3013L25 0Z";
 
   return (
     <motion.nav
@@ -71,10 +73,10 @@ const Navbar = () => {
               className="flex items-center cursor-pointer group relative"
               aria-label="Home"
             >
-              <svg 
-                width="30" 
-                height="30" 
-                viewBox="0 0 100 87" 
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 100 87"
                 className="mr-2 text-purple-400 group-hover:text-purple-300 transition-colors"
               >
                 <motion.path
@@ -84,11 +86,11 @@ const Navbar = () => {
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                 />
-                <text 
-                  x="50" 
-                  y="55" 
-                  textAnchor="middle" 
-                  fill="currentColor" 
+                <text
+                  x="50"
+                  y="55"
+                  textAnchor="middle"
+                  fill="currentColor"
                   className="text-xl font-bold"
                 >
                   F
@@ -104,7 +106,7 @@ const Navbar = () => {
             {/* Holographic Desktop Menu */}
             <ul className="hidden md:flex items-center space-x-1">
               {navItems.map((item) => (
-                <motion.li 
+                <motion.li
                   key={item.id}
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.95 }}
@@ -118,7 +120,7 @@ const Navbar = () => {
                           {item.label}
                         </span>
                       </div>
-                      <motion.div 
+                      <motion.div
                         className="absolute bottom-0 left-0 right-0 h-0.5 bg-purple-400 opacity-0 group-hover:opacity-100"
                         initial={{ scaleX: 0 }}
                         whileHover={{ scaleX: 1 }}
@@ -173,7 +175,7 @@ const Navbar = () => {
                   transition={{ delay: index * 0.1 }}
                 >
                   <Link href={`${item.id}`} passHref legacyBehavior>
-                    <a 
+                    <a
                       className="flex items-center gap-3 py-3 px-4 rounded-md hover:bg-gray-700/30 transition-colors text-gray-200 font-mono group"
                       onClick={() => setIsOpen(false)}
                     >
@@ -194,7 +196,7 @@ const Navbar = () => {
       </AnimatePresence>
 
       {/* Animated Circuit Border (Bottom) */}
-      <motion.div 
+      <motion.div
         className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-purple-500 to-transparent"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
