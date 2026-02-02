@@ -105,6 +105,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-black text-white selection:bg-purple-500 selection:text-white`}
+        suppressHydrationWarning={true}
       >
         <Navbar/>
         {children}

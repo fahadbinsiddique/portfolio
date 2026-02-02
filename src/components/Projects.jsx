@@ -13,7 +13,7 @@ const projects = [
     title: "Hekto Ecommerce Site",
     description:
       "Hekto is a responsive and modern eCommerce website offering a smooth and smart online shopping experience",
-    link: "https://fahadprojecttwo.vercel.app/",
+    link: "https://fahadone.vercel.app/",
     github: "https://github.com/fahadbinsiddique/hektoproject",
     image: "/promotional.png",
     tags: ["Tailwind", "React", "JavaScript", "FireBase"],
@@ -179,7 +179,7 @@ const Projects = () => {
 
         <div className="text-center mt-16">
           <button className="px-8 py-3 border-2 border-purple-500 text-purple-400 rounded-lg font-semibold hover:bg-purple-900/30 transition-all hover:scale-105">
-            View All Projects
+            <a href="/projects">View All Projects</a>
           </button>
         </div>
       </div>

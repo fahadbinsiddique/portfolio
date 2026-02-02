@@ -1,7 +1,7 @@
-import Projects from "@/components/Projects";
+import ProjectsPage from "@/components/ProjectsPage";
 
 const page = () => {
-  return <div className="py-12"> <Projects/> </div>;
+  return <div className="py-8"> <ProjectsPage/> </div>;
 };
 
 export default page;
